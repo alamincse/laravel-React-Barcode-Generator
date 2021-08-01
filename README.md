@@ -1,7 +1,7 @@
 ## Installation
 
 ```
-1. git clone https://github.com/alamincse/laravel-React-Barcode-Generator.git barcode-generator
+1. git clone https://github.com/alamincse/laravel-react-barcode-generator.git barcode-generator
 2. rename env.example to .env
 3. connect with db from .env file
 4. composer install
