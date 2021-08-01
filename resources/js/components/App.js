@@ -1,5 +1,6 @@
 import { React, Component } from 'react';
 import ReactDOM from 'react-dom';
+import QRCode from 'qrcode.react';
 
 export default class App extends Component {
     constructor(props) {
@@ -25,13 +26,17 @@ export default class App extends Component {
 
                     <div className="col-md-6 offset-md-3 card">
                         <div className="card-body">
-                            <h4 className="text-center">Welcome To React JS App!</h4>
                             <ul>
                                 {this.state.data.map((details, index) => (
-                                    <li key={index}>
-                                        ID: {details.id}
-                                        Order number: {details.order_number}
-                                        Order Item: {details.item}
+                                    <li key={index} style={{marginBottom:'25px'}}>
+                                        <p>
+                                            ID: {details.id} <br />
+                                            Order number: {details.order_number} <br/ >
+                                            Item barcode: {details.item_barcode} <br/ >
+                                            Order Item: {details.item} <br/ >
+                                        </p>
+                                        
+                                        <QRCode value={JSON.stringify(details)} />
                                     </li>
                                 ))}
                             </ul>

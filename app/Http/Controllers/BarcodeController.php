@@ -13,11 +13,10 @@ class BarcodeController extends Controller
 {
 	public function index()
 	{
-		$orderQuery = Order::get();
-
 		$title = 'Barcode Scanner - Laravel & React';
-		$heading = 'Laravel & React JS Barcode Generate.';
-		$orders = json_encode($orderQuery);
+		$heading = 'Laravel & React JS Barcode Generator';
+
+		$orders = Order::get();
 
 		return view('welcome', get_defined_vars());
 	}
