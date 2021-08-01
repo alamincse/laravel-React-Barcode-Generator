@@ -1,5 +1,6 @@
 ## Installation
 
+```
 git clone https://github.com/alamincse/laravel-React-Barcode-Generator.git barcode-generator
 edit env.example to .env
 connect with db from .env file
