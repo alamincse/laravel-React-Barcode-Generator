@@ -2,7 +2,7 @@
 
 ```
 1. git clone https://github.com/alamincse/laravel-React-Barcode-Generator.git barcode-generator
-2. edit env.example to .env
+2. rename env.example to .env
 3. connect with db from .env file
 4. composer install
 5. php artisan key:generate
